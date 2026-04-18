@@ -1,0 +1,16 @@
+{
+    "name": "baserproject/bc-content-link-extension",
+    "description": "BcContentLinkExtension plugin for baserCMS",
+    "homepage": "https://basercms.net",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "vendor-dir": "../../vendor",
+    "require": {
+        "baserproject/bc-content-link": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BcContentLinkExtension\\": "src/"
+        }
+    }
+}
