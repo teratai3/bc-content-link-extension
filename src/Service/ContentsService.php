@@ -29,7 +29,7 @@ class ContentsService extends BaseContentsService
         ])->first();
         if (!$root) return false;
         $query = $this->Contents->find('children', for: $root->id, direct: true);
-        $contents =$query->where([
+        $contents = $query->where([
             'Contents.exclude_menu' => false,
             $this->Contents->getConditionAllowPublish()
         ]);
